@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+	<head>
+		<link rel="canonical" href="https://codepen.io/zkriszti/pen/mpbpLK">
+		<link href="atm-styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id='wrapper'>
+			<h1 id='text-title'><span class='heart'>&#x2764;</span>A lovely ATM that won't drain your bank account<span class='heart'>&#x2764;</span></h1>
+			<div id='content'>		
+				<div id='codepenomat'>	
+					<div id='machine-name'>Codepen-O-Mat</div>
+					<div id='machine'>
+						<div class='note-row'><span class='note-title'></span><button class='add' data-row-index='1'>+</button><button class='decr' data-row-index='1'>-</button><span class='pieces' data-pieces-index='1'></span><span class='rowSum'></span></div>
+						<div class='note-row'><span class='note-title'></span><button class='add' data-row-index='2'>+</button><button class='decr' data-row-index='2'>-</button><span class='pieces' data-pieces-index='2'></span><span class='rowSum'></span></div>
+						<div class='note-row'><span class='note-title'></span><button class='add' data-row-index='3'>+</button><button class='decr' data-row-index='3'>-</button><span class='pieces' data-pieces-index='3'></span><span class='rowSum'></span></div>
+						<div class='note-row'><span class='note-title'></span><button class='add' data-row-index='4'>+</button><button class='decr' data-row-index='4'>-</button><span class='pieces' data-pieces-index='4'></span><span class='rowSum'></span></div>
+			</div>
+					<div id='totalrow'><p>TOTAL: <span id='total'></span></p></div>
+				</div>
+				<div id='intro'>
+					<p>Let me introduce <em>CODEPEN-O-MAT</em>, a little ATM machine screen simulator that I have built just for fun and to practice some basic JS concepts.</p>
+					<p class='disclaimer'>(Security disclaimer: being a client-side language, you would definitely NOT use JavaScript for this task in a real-life scenario.  Just sayin'. :) )</p>
+					<p><em>CODEPEN-O-MAT mimics a special ATM screen</em> where you have the possibility to exactly specify the banknotes in which you want to receive the sum to be withdrawn. Ie. if you need 300 EUR cash "split", you can then set it to give you 6 items of 50 EUR notes instead of just 3 items of 100 EUR notes.</p>
+					<p>For your convenience, it will display how many pieces of each banknote you want, the subtotal for the given banknote and also the total sum that you (would) receive from a real ATM.</p>
+					<p id='thanks'><span class='heart'>&#x2764;</span>Special thanks to <a href='https://davidwalsh.name/event-delegate'>this David Walsh article about JS event delegation</a>. :)</p>
+			</div>	
+			</div>
+		</div>
+		<footer><script src="atm-sim.js"></script></footer>
+	</body>
+</html>		

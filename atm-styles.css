@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+body {
+	height: 100vh; 
+	background: -moz-linear-gradient(top, rgba(255,207,35,1) 0%, rgba(255,255,255,1) 30%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,207,35,1) 0%,rgba(255,255,255,1) 30%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,207,35,1) 0%,rgba(255,255,255,1) 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-repeat: no-repeat;
+}
+#wrapper {
+	font-family: Verdana, sans-serif; 
+	margin: 1rem; 
+	overflow: hidden;
+}
+#text-title, #machine-name {font-family: Bungee; line-height: 1.6;}
+#text-title {color: #242F40; text-align: center; display: block; font-size: 1.3rem;}
+#text-title .heart {color: #db3a34; display: block;}
+
+#content {
+	overflow: hidden; 
+	clear: both;
+}
+
+#intro {
+	line-height: 1.8; 
+	font-size:0.85rem; 
+	color: #666; 
+	margin-top: 2rem;
+}
+#intro span.heart {margin-right: 1rem;}
+em {font-weight: bold;}
+
+.disclaimer {
+	font-size: 0.8rem; 
+	text-transform: uppercase; 
+	width: 80%; 
+	margin: auto
+}
+
+#codepenomat {
+	background: rgba(120,120,120,0.5); 
+	display: block; 
+	border-radius: 6px; 
+	margin: 2rem 0 0 0; 
+	padding: 0.5rem; 
+}
+
+#machine-name {
+	text-transform: uppercase; 
+	margin-bottom: 1rem; 
+	text-align: center; 
+	letter-spacing: 3px; 
+	font-size: 1.5rem
+}
+
+#machine span, #machine button {margin-right: 6px;}
+
+.note-row {
+	display: table-row; 
+	padding-bottom: 0rem; 
+	font-size: 0.7rem;
+}
+.note-title {
+	display: table-cell; 
+	text-align: right; 
+	padding-right: 0.5rem;
+}
+#totalrow {
+	border-top: 1px solid white; 
+	margin-top: 0.8rem; 
+	font-size: 0.7rem; 
+	background: rgba(255,255,255,0.3); 
+	display: flex; 
+	flex-direction: column; 
+	padding-left: 0.8rem;
+}
+#totalrow p {margin-top: 0.8rem;}
+.pieces, .rowSum {text-align: right; display: table-cell;}
+.pieces {padding-right: 8px;}
+#thanks {text-align: center; margin-top: 2rem;font-size:0.8rem;}
+
+@media only screen and (min-width: 320px) {
+	#machine button {margin-right: 6px;}
+}
+
+@media only screen and (min-width: 510px) {
+	#text-title {font-size: 2rem;}
+}
+
+@media only screen and (min-width: 768px) {
+	#intro {padding-right: 2rem;}
+	#codepenomat {width: 35%; float: right; margin-left: 2rem;}
+	.disclaimer {width: 100%; margin-left: 1.8rem;}
+	.note-row, #totalrow {font-size: 0.7rem;}
+	.note-title {padding-right: 0.75rem;}
+}
+
+@media only screen and (min-width: 992px) {
+	#wrapper {width: 55rem; margin: auto;}
+}
